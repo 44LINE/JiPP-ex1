@@ -32,7 +32,7 @@ Matrix::Matrix(const Matrix &matrix2) {
 //destructor
 Matrix::~Matrix() {
     cout << "Destructor " << this << endl;
-    for (int i = 0; i < Matrix::columns; i++) {
+    for (int i = 0; i < Matrix::rows; i++) {
         delete [] Matrix::matrixArray[i];
     }
     delete [] Matrix::matrixArray;
